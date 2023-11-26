@@ -15,6 +15,16 @@ import {
 import { db } from "../firebase";
 // import { AIOutlinePlus } from "react-icons/ai";
 
+const style = {
+  bg: `h-screen w-screen p-4 bg-gradient-to-r from-[#2F80ED] to-[#1CB5E0]`,
+  container: `bg-slate-100 max-w-[500px] w-full m-auto rounded-md shadow-xl p-4`,
+  heading: `text-3xl font-bold text-center text-gray-800 p-2`,
+  form: `flex justify-between`,
+  input: `border p-2 w-full text-xl text-black`,
+  button: `border p-4 ml-2 bg-purple-500`,
+  count: `text-center p-2 text-black`,
+};
+
 const page = () => {
   const { user } = UserAuth();
   const [loading, setLoading] = useState(true);
@@ -73,21 +83,23 @@ const page = () => {
   }, [user]);
 
   return (
-    <div className="p-4">
+    <div className={style.bg}>
       {loading ? (
         <Spinner />
       ) : user ? (
-        <div>
-          <p>Welcome, {user.displayName} - List your preferred task here!!</p>
-          <h1>TODO APP</h1>
-          <form onSubmit={createTodo}>
+        <div className={style.container}>
+          <p className="text-black-800">
+            Welcome, {user.displayName} - List your preferred task here!!
+          </p>
+          <h3 className={style.heading}>TODO APP</h3>
+          <form onSubmit={createTodo} className={style.form}>
             <input
               value={input}
               onChange={(e) => setInput(e.target.value)}
               type="text"
               placeholder="Add todo"
             />
-            <button>ADD</button>
+            <button className={style.button}>ADD</button>
           </form>
           <ul>
             {todos.map((todo, index) => (
@@ -99,7 +111,7 @@ const page = () => {
               />
             ))}
           </ul>
-          <p>{`You have ${todos.length} todos`}</p>
+          <p className={style.count}>{`You have ${todos.length} todos`}</p>
         </div>
       ) : (
         <p>You must be logged in to view this page - protected route</p>

@@ -35,23 +35,23 @@ const Navbar = () => {
   }, [user]);
 
   return (
-    <div className="h-20 w-full border-b-2 flex items-center justify-between p-2">
+    <div className="h-20 w-full border-b-2 flex items-center justify-between p-2 bg-black">
       <ul className="flex">
-        <li className="p-2 cursor-pointer">
+        <li className="p-2 cursor-pointer text-white">
           <Link href="/">Home</Link>
         </li>
         {!user ? null : (
-          <li className="p-2 cursor-pointer">
+          <li className="p-2 cursor-pointer text-white">
             <Link href="/profile">Profile</Link>
           </li>
         )}
       </ul>
       {loading ? null : !user ? (
         <ul className="flex">
-          <li onClick={handleSignIn} className="p-2 cursor-pointer">
+          <li onClick={handleSignIn} className="p-2 cursor-pointer text-white">
             Login
           </li>
-          <li onClick={handleSignIn} className="p-2 cursor-pointer">
+          <li onClick={handleSignIn} className="p-2 cursor-pointer text-white">
             Sign up
           </li>
         </ul>
@@ -59,7 +59,7 @@ const Navbar = () => {
         <div className="flex">
           {" "}
           <p className="p-2">Welcome, {user.displayName}</p>
-          <p className="p-2 cursor-pointer" onClick={handleSignOut}>
+          <p className="p-2 cursor-pointer text-white" onClick={handleSignOut}>
             Sign out
           </p>
         </div>
