@@ -1,34 +1,28 @@
-This is a [Next.js](https://nextjs.org/) project bootstrapped with [`create-next-app`](https://github.com/vercel/next.js/tree/canary/packages/create-next-app).
 
-## Getting Started
+## Starting look of website when user is not logged in
 
-First, run the development server:
 
-```bash
-npm run dev
-# or
-yarn dev
-# or
-pnpm dev
-```
+![image1](https://github.com/himanshi-sharma-123/todo-app-nextjs-firebase/assets/78066781/b5fb514e-b146-4d42-966b-6748e7dca18f)
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+## User Google Authentication
+![image2](https://github.com/himanshi-sharma-123/todo-app-nextjs-firebase/assets/78066781/50a7d08d-2817-4996-850c-b446eacfe9a5)
 
-You can start editing the page by modifying `app/page.js`. The page auto-updates as you edit the file.
 
-This project uses [`next/font`](https://nextjs.org/docs/basic-features/font-optimization) to automatically optimize and load Inter, a custom Google Font.
+## TODO List of User
 
-## Learn More
+![image3](https://github.com/himanshi-sharma-123/todo-app-nextjs-firebase/assets/78066781/509db54d-6b5c-47a1-abbf-dbdf95eca10c)
 
-To learn more about Next.js, take a look at the following resources:
 
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
+## Addition of NEW TODO
 
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js/) - your feedback and contributions are welcome!
+![image4](https://github.com/himanshi-sharma-123/todo-app-nextjs-firebase/assets/78066781/1bba81ac-10da-41b0-85dd-b1233ac03665)
 
-## Deploy on Vercel
+## Completion of existing task
+![image5](https://github.com/himanshi-sharma-123/todo-app-nextjs-firebase/assets/78066781/ae816833-2baa-4322-87e9-4b35b15f8b36)
 
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
+## Deletion of existing task
 
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/deployment) for more details.
+
+![image6](https://github.com/himanshi-sharma-123/todo-app-nextjs-firebase/assets/78066781/8117daf5-0af6-4dfc-af90-db109bc58712)
+
+
